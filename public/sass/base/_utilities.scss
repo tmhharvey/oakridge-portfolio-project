@@ -1,0 +1,49 @@
+.my-bottom-big {
+  margin-bottom: 8rem !important;
+  @include responsive(tab-port) {
+    margin-bottom: 5rem !important;
+  }
+}
+
+.my-bottom-medium {
+  margin-bottom: 4rem !important;
+  @include responsive(tab-port) {
+    margin-bottom: 3rem !important;
+  }
+}
+
+.my-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+.my-top-big {
+  margin-top: 8rem !important;
+}
+
+.my-top-medium {
+  margin-top: 4rem !important;
+}
+
+.my-top-small {
+  margin-top: 1.5rem !important;
+}
+
+.py-top-big {
+  padding-top: 8rem !important;
+}
+
+.py-top-medium {
+  padding-top: 4rem !important;
+}
+
+.py-top-small {
+  padding-top: 1.5rem !important;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+u-weight-bold {
+  font-weight: bold;
+}

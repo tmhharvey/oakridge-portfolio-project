@@ -1,0 +1,34 @@
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/base";
+@import "base/_animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/nav";
+@import "components/form";
+@import "components/popup";
+@import "components/image-slider";
+@import "components/info-box";
+@import "components/full-section-info-box";
+@import "components/cards";
+
+@import "layout/footer";
+@import "layout/header";
+
+@import "pages/home";
+
+//images obtained an unsplash
+//videos obtained at cover.co
+//average device sizes for media queries found at statcalendar
+
+//'Good Way' for media query breakpoints
+//Use multiple devices and group them together by screen-width.  Then optimize
+
+// 'Perfect Way' for media query breakpoints
+//ignore devices all together and just keep inserting breakpoints where design starts to breal
+
+// 'Sizzy.co' for testing across multiple devices

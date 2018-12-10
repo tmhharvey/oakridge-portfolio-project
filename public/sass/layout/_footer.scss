@@ -1,0 +1,98 @@
+.footer {
+  background-color: $color-grey-dark-3;
+  padding: 10rem 10rem;
+  font-size: 1.4rem;
+
+  @include responsive(tab-port) {
+    padding: 8rem 0;
+  }
+
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+  }
+
+  &__logo {
+    width: 25rem;
+    height: auto;
+    position: absolute;
+    @include absCenter;
+    &--default {
+      animation-name: fadeOutDefault;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+    }
+    &--1hole {
+      animation-name: fadeOutHole1;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+    }
+    &--2holes {
+      animation-name: fadeOutHoles2;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+    }
+    &--3holes {
+      animation-name: fadeOutHoles3;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+    }
+  }
+
+  // &:hover {
+  //   animation-name: twirlAround;
+  //   animation-duration: 0.3s;
+  // }
+
+  &__navigation {
+    border-top: 1px solid $color-grey-dark;
+    padding-top: 2rem;
+    display: inline-block;
+    @include responsive(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-off-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary-light;
+      box-shadow: 0 1.5rem 2rem rgba($color-black, 0.4);
+    }
+  }
+
+  &__copyright {
+    color: $color-off-white;
+    border-top: 1px solid $color-grey-dark;
+    padding-top: 2rem;
+    display: inline-block;
+    width: 80%;
+    float: right;
+    @include responsive(tab-port) {
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
+  }
+}

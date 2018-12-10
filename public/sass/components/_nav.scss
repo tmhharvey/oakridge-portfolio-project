@@ -1,0 +1,86 @@
+.navbar {
+  position: relative;
+  background-color: $color-white;
+  padding: 6rem 1rem;
+
+  &__logo-box {
+    top: 2rem;
+    left: 4rem;
+  }
+
+  &__logo-image {
+    width: 15%;
+    position: absolute;
+    top: 0.2rem;
+    left: 4rem;
+
+    &--default {
+      animation-name: fadeOutDefault;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+    }
+    &--1hole {
+      animation-name: fadeOutHole1;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+    }
+    &--2holes {
+      animation-name: fadeOutHoles2;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+    }
+    &--3holes {
+      animation-name: fadeOutHoles3;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+    }
+  }
+
+  &__toggler-icon {
+    font-size: 3rem;
+    z-index: 9999;
+    position: absolute;
+    top: 2.5rem;
+    right: 1.5rem;
+    background-color: $color-primary;
+    padding: 1rem;
+    border-radius: 50%;
+    &:hover {
+      background-color: lighten($color-primary, 6);
+    }
+  }
+
+  &__main-nav {
+    position: absolute;
+    padding: 3rem 1rem;
+    right: 5rem;
+    transform: translateY(-50%, -50%);
+  }
+
+  &__nav-link {
+    font-size: $default-font-size;
+    color: $color-primary;
+    font-weight: bold;
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      border: 10px solid transparent;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      border: 10px solid $color-primary;
+      border-radius: 0.5rem;
+    }
+  }
+  &__nav-items {
+    display: inline-block;
+    margin-right: 5rem;
+    font-size: $default-font-size;
+  }
+}

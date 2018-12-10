@@ -1,0 +1,24 @@
+.header {
+  position: relative;
+
+  &__info-box {
+    padding: 0.5rem;
+    background-color: $color-secondary-dark;
+    color: $color-white;
+  }
+  &__info-box-item {
+    font-size: $default-font-size;
+  }
+  &__main-section {
+    position: relative;
+    height: 75vh;
+    z-index: -1;
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)
+      ),
+      url("../img/hero-1.jpg");
+  }
+}

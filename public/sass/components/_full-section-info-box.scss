@@ -1,0 +1,32 @@
+.full-section-info-box {
+  padding: 5rem 2rem;
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.95) 0%,
+      rgba($color-white, 0.95) 50%,
+      rgba(transparent, 0.05) 50%
+    ),
+    url(../img/range-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  border-radius: $default-border-radius;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+  @include responsive(tab-land) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 64%,
+        rgba(transparent, 0.05) 64%
+      ),
+      url(../img/range-1.png);
+  }
+  @include responsive(tab-port) {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 100%
+      ),
+      url(../img/nat-10.jpg);
+  }
+}

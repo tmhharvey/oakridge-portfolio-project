@@ -1,0 +1,63 @@
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  font-family: $default-font-family;
+
+  &--main {
+    @include responsive(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
+  }
+
+  &--sub {
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: $default-font-family;
+
+  @include responsive(phone) {
+    font-size: 3rem;
+  }
+
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  &--white {
+    color: $color-off-white;
+  }
+  &:hover {
+    background-image: linear-gradient(
+      to right,
+      lighten($color-primary-light, 15%),
+      lighten($color-primary-dark, 15%)
+    );
+  }
+}
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: $default-font-family;
+}
+.paragraph-info {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: $default-font-family;
+}
