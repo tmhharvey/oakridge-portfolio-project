@@ -890,7 +890,7 @@ u-weight-bold {
 
 .section-store {
   padding: 10rem 15rem;
-  background-image: linear-gradient(to right bottom, #d61a20, #e31c22 55%, #d61a20 70%, #c8181e 80%, #921216); }
+  background-image: linear-gradient(to right bottom, #5b5b5b, #636363 55%, #5b5b5b 70%, #535353 80%, #353535); }
   @media (max-width: 37.5em) {
     .section-store {
       padding: 5rem 5rem; } }

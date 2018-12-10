@@ -23,11 +23,11 @@
   padding: 10rem 15rem;
   background-image: linear-gradient(
     to right bottom,
-    $color-primary,
-    lighten($color-primary, 3%) 55%,
-    $color-primary 70%,
-    darken($color-primary, 3%) 80%,
-    darken($color-primary, 15%)
+    $color-secondary-light,
+    lighten($color-secondary-light, 3%) 55%,
+    $color-secondary-light 70%,
+    darken($color-secondary-light, 3%) 80%,
+    darken($color-secondary-light, 15%)
   );
   @include responsive(phone) {
     padding: 5rem 5rem;
