@@ -708,9 +708,7 @@ u-weight-bold {
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #5b5b5b, #333333), url(../img/carousel-1.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #e73c41, #a91419), url(../img/range-10.jpg); }
-    .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #e1e1e1, #b4b4b4), url(../img/nat-7.jpg); }
+      background-image: linear-gradient(to right bottom, #e73c41, #a91419), url(../img/range-10.JPG); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
