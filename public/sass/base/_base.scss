@@ -70,3 +70,13 @@ a:hover {
   margin-left: 0px;
   margin-right: 0px;
 }
+
+span {
+  display: block;
+}
+
+hr {
+  background-color: $color-white;
+  width: 75%;
+  margin: 0 auto;
+}

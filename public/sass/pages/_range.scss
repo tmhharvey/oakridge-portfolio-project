@@ -1,0 +1,23 @@
+.header-static {
+  &__box {
+    @include absCenter;
+    top: 40%;
+    text-align: center;
+    padding: 3rem;
+    width: 100%;
+  }
+  &__image {
+    @include absCenter;
+    border-radius: $default-border-radius;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+    background-size: cover;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+  }
+}
+
+.section-range-info {
+  padding: 5rem 10rem 0rem 10rem;
+  border-radius: $default-border-radius;
+  background-color: $color-tertiary-light;
+}

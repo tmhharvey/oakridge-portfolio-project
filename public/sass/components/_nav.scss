@@ -1,7 +1,7 @@
 .navbar {
   position: relative;
   background-color: $color-white;
-  padding: 6rem 1rem;
+  padding: 7rem 1rem;
 
   &__logo-box {
     top: 2rem;
@@ -9,9 +9,9 @@
   }
 
   &__logo-image {
-    width: 15%;
+    width: 20%;
     position: absolute;
-    top: 0.2rem;
+    top: 0.5rem;
     left: 4rem;
 
     &--default {
@@ -58,7 +58,7 @@
   }
 
   &__nav-link {
-    font-size: $default-font-size;
+    font-size: 1.7rem;
     color: $color-primary;
     font-weight: bold;
 
@@ -82,5 +82,10 @@
     display: inline-block;
     margin-right: 5rem;
     font-size: $default-font-size;
+
+    @include responsive(tab-land) {
+      margin-right: 2rem;
+      font-size: $default-font-size * 0.7;
+    }
   }
 }

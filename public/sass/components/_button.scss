@@ -64,21 +64,6 @@
     }
   }
 
-  &--gunbroker {
-    background-color: linear-gradient(
-      to right bottom,
-      $color-gunbroker-1,
-      $color-gunbroker-2
-    );
-    color: $color-white;
-    &::after {
-      background-color: $color-primary;
-      color: $color-white;
-    }
-    &:hover {
-      color: $color-white;
-    }
-  }
   &--animated {
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;

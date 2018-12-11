@@ -1,0 +1,19 @@
+.sidebar-and-info {
+  background-color: $color-white;
+  border-radius: $default-border-radius;
+  &__sidebar {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-dark, 0.7),
+        rgba($color-tertiary-light, 0.6)
+      ),
+      url("../img/hero-1.jpg");
+    background-size: cover;
+    border: 4px ridge $color-tertiary-light;
+  }
+  &__info-bar {
+    margin-top: 1rem;
+  }
+}

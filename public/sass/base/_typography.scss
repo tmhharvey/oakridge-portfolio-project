@@ -9,15 +9,32 @@ body {
   color: $color-white;
   text-transform: uppercase;
   font-family: $default-font-family;
+  transition: all 0.5s;
 
-  &--main {
+  &__main {
+    color: $color-yellow-1;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    animation-name: moveInRight;
+    animation-duration: 1s;
     @include responsive(phone) {
       letter-spacing: 1rem;
       font-size: 5rem;
     }
   }
 
-  &--sub {
+  &__sub {
+    color: $color-white;
+
+    font-size: 2.5rem;
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    margin-bottom: 3rem;
+    @include responsive(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 }
 
@@ -26,6 +43,25 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-family: $default-font-family;
+
+  &__sub {
+    color: $color-white;
+
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    &--yellow {
+      color: $color-yellow-1;
+    }
+
+    &--red {
+      color: $color-primary-light;
+    }
+
+    @include responsive(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
+  }
 
   @include responsive(phone) {
     font-size: 3rem;
@@ -55,6 +91,24 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   font-family: $default-font-family;
+  &__sub {
+    color: $color-white;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    &--yellow {
+      color: $color-yellow-1;
+    }
+    &--red {
+      color: $color-primary-light;
+    }
+    @include responsive(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
+  }
+  &--black {
+    color: $color-black;
+  }
 }
 .paragraph-info {
   font-size: 1.6rem;

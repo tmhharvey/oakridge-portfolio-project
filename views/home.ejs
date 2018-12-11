@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('layouts/head-links'); %>
+  <%- include('components/head-links'); %>
   <body>
-    <div class="container-fluid"><%- include('layouts/header'); %></div>
+    <div class="container-fluid"><%- include('layouts/header-slider'); %></div>
     <div class="container-fluid">
       <main>
         <section class="section-info">
@@ -150,7 +150,9 @@
             </div>
           </div>
         </section>
-        <%- include('components/store'); %>
+        <section class="section-store">
+          <%- include('components/store'); %>
+        </section>
       </main>
       <%- include('layouts/footer'); %>
     </div>
