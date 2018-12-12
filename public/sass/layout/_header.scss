@@ -62,4 +62,18 @@
       url("../img/hero-2.jpg");
     background-size: 100% 100%;
   }
+
+  &__quad-section {
+    position: relative;
+    height: 65vh;
+    z-index: -1;
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.8),
+        rgba($color-secondary-dark, 0.8)
+      ),
+      url("../img/carousel-1.jpg");
+    background-size: 100% 100%;
+  }
 }

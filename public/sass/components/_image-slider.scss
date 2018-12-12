@@ -5,6 +5,7 @@
     height: 60vh;
 
     border: 5px ridge $color-tertiary-light;
+    box-shadow: 0 1.5rem 2.5rem rgba($color-black, 0.4);
     overflow: hidden;
   }
   &__box img {

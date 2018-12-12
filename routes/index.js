@@ -18,4 +18,12 @@ router.get("/classes-and-training", function(req, res) {
   res.render("classes-and-training");
 });
 
+router.get("/gunsmithing", function(req, res) {
+  res.render("gunsmithing");
+});
+
+router.get("/contact", function(req, res) {
+  res.render("contact");
+});
+
 module.exports = router;
