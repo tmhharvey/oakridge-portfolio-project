@@ -1,5 +1,14 @@
 .section-contact {
   padding: 5rem 25rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-secondary-light, 0.8),
+      rgba($color-secondary-dark, 0.8)
+    ),
+    url("../img/hero-1.jpg");
+  background-size: auto;
+  z-index: -2;
+  position: relative;
 }
 
 .contact-box {

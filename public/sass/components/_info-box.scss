@@ -9,6 +9,10 @@
   margin: 0 1.5rem;
   height: 95%;
 
+  &--ridge {
+    border: 4px ridge $color-tertiary-light;
+  }
+
   @include responsive(tab-port) {
     margin-bottom: 4rem;
   }
@@ -40,6 +44,9 @@
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    &--small {
+      font-size: 4rem;
+    }
     &:hover {
       background-image: linear-gradient(
         to right,
