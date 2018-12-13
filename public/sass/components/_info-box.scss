@@ -13,6 +13,10 @@
     border: 4px ridge $color-tertiary-light;
   }
 
+  @include responsive(tab-land) {
+    margin: 0 0.5rem;
+  }
+
   @include responsive(tab-port) {
     margin-bottom: 4rem;
   }
@@ -26,6 +30,10 @@
     text-align: left;
     font-size: 1.4rem;
     padding-left: 1rem;
+
+    @include responsive(tab-land) {
+      padding: 0.2rem;
+    }
 
     & li {
       padding-bottom: 1rem;

@@ -27,6 +27,10 @@
     height: 70vh;
     z-index: -1;
 
+    @include responsive(phone) {
+      height: 50vh;
+    }
+
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
@@ -41,6 +45,10 @@
     height: 65vh;
     z-index: -1;
 
+    @include responsive(phone) {
+      height: 40vh;
+    }
+
     background-image: linear-gradient(
         to right bottom,
         rgba($color-secondary-light, 0.85),
@@ -53,6 +61,10 @@
     position: relative;
     height: 65vh;
     z-index: -1;
+
+    @include responsive(phone) {
+      height: 40vh;
+    }
 
     background-image: linear-gradient(
         to right bottom,

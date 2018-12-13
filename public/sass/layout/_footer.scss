@@ -53,6 +53,10 @@
       width: 100%;
       text-align: center;
     }
+
+    @include responsive(phone) {
+      margin-top: 3.5rem;
+    }
   }
 
   &__list {

@@ -105,9 +105,9 @@
     top: 1rem;
     right: 1rem;
     width: 75%;
-    // @include responsive(tab-land) {
-    // font-size: 2rem;
-    // }
+    @include responsive(tab-land) {
+      font-size: 2rem;
+    }
     // @include responsive(tab-land) {
     // font-size: 3rem;
     // }
@@ -190,6 +190,7 @@
         height: 100%;
         padding: 5rem 0 5rem 0;
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        margin-top: -8rem;
       }
     }
     &:hover &__side--front {

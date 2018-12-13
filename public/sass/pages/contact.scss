@@ -9,6 +9,10 @@
   background-size: auto;
   z-index: -2;
   position: relative;
+
+  @include responsive(phone) {
+    padding: 1rem 0.5rem;
+  }
 }
 
 .contact-box {

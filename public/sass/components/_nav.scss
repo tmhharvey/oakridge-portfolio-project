@@ -2,6 +2,24 @@
   position: relative;
   background-color: $color-white;
   padding: 7rem 1rem;
+  z-index: 99999999;
+
+  & ul {
+    @include responsive(tab-awk) {
+      z-index: 99999999999;
+      background-color: $color-white;
+      border-radius: $default-border-radius;
+      margin-top: 2rem;
+      margin-right: 5rem;
+      padding: 1rem;
+    }
+  }
+
+  & button {
+    &:focus {
+      outline: 0;
+    }
+  }
 
   &__logo-box {
     top: 2rem;
@@ -13,6 +31,24 @@
     position: absolute;
     top: 0.5rem;
     left: 4rem;
+    @include responsive(tab-land) {
+      width: 25%;
+
+      top: 0rem;
+    }
+    @include responsive(tab-awk) {
+      width: 30%;
+    }
+
+    @include responsive(phone) {
+      width: 40%;
+      z-index: 1;
+    }
+
+    @include responsive(small-phone) {
+      top: 1rem;
+      width: 50%;
+    }
 
     &--default {
       animation-name: fadeOutDefault;
@@ -36,18 +72,20 @@
     }
   }
 
-  &__toggler-icon {
-    font-size: 3rem;
+  &__toggler {
     z-index: 9999;
     position: absolute;
     top: 2.5rem;
     right: 1.5rem;
-    background-color: $color-primary;
+    background-color: $color-white;
     padding: 1rem;
-    border-radius: 50%;
     &:hover {
-      background-color: lighten($color-primary, 6);
+      background-color: lighten($color-tertiary-light, 3);
     }
+  }
+
+  &__toggler-icon {
+    font-size: 3rem;
   }
 
   &__main-nav {
@@ -55,12 +93,18 @@
     padding: 3rem 1rem;
     right: 1rem;
     transform: translateY(-50%, -50%);
+    @include responsive(phone) {
+      z-index: 9;
+    }
   }
 
   &__nav-link {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color: $color-primary;
     font-weight: bold;
+    @include responsive(tab-land) {
+      font-size: 1.5rem;
+    }
 
     &:link,
     &:visited {
@@ -85,7 +129,6 @@
 
     @include responsive(tab-land) {
       margin-right: 2rem;
-      font-size: $default-font-size * 0.7;
     }
   }
 }

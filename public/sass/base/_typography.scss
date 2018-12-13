@@ -20,7 +20,7 @@ body {
     animation-duration: 1s;
     @include responsive(phone) {
       letter-spacing: 1rem;
-      font-size: 5rem;
+      font-size: 2rem;
     }
   }
 
@@ -33,7 +33,7 @@ body {
     margin-bottom: 3rem;
     @include responsive(phone) {
       letter-spacing: 1rem;
-      font-size: 5rem;
+      font-size: 1.5rem;
     }
   }
 }

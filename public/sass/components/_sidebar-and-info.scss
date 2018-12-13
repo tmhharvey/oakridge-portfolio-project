@@ -4,6 +4,7 @@
   &__sidebar {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-weight: bold;
     background-image: linear-gradient(
         to right bottom,
         rgba($color-secondary-dark, 0.7),
@@ -12,6 +13,13 @@
       url("../img/hero-1.jpg");
     background-size: cover;
     border: 4px ridge $color-tertiary-light;
+
+    & h2 {
+      @include responsive(phone) {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
   }
   &__info-bar {
     margin-top: 1rem;

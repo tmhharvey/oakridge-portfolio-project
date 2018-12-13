@@ -7,10 +7,24 @@
     border: 5px ridge $color-tertiary-light;
     box-shadow: 0 1.5rem 2.5rem rgba($color-black, 0.4);
     overflow: hidden;
+
+    @include responsive(phone) {
+      width: 95vw;
+      height: 35vh;
+    }
+
+    @include responsive(small-phone) {
+    }
   }
   &__box img {
     width: 70vw;
     height: 60vh;
+    @include responsive(phone) {
+      width: 95vw;
+      height: 35vh;
+    }
+    @include responsive(small-phone) {
+    }
   }
   &__image {
     @include absCenter;

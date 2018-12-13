@@ -28,6 +28,12 @@
     }
   }
 
+  @if $breakpoint == tab-awk {
+    @media (max-width: 61.938em) {
+      @content; //992px
+    }
+  }
+
   @if $breakpoint == tab-port {
     @media (max-width: 56.25em) {
       @content; //900px

@@ -20,4 +20,8 @@
   padding: 5rem 10rem 0rem 10rem;
   border-radius: $default-border-radius;
   background-color: $color-tertiary-light;
+
+  @include responsive(phone) {
+    padding: 1rem 0.5rem;
+  }
 }
