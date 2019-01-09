@@ -42,7 +42,7 @@
 
   &__secondary-section {
     position: relative;
-    height: 65vh;
+    height: 55vh;
     z-index: -1;
 
     @include responsive(phone) {
@@ -59,7 +59,7 @@
   }
   &__tertiary-section {
     position: relative;
-    height: 65vh;
+    height: 55vh;
     z-index: -1;
 
     @include responsive(phone) {
@@ -77,7 +77,7 @@
 
   &__quad-section {
     position: relative;
-    height: 65vh;
+    height: 55vh;
     z-index: -1;
 
     background-image: linear-gradient(
