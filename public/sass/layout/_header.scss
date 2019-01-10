@@ -24,11 +24,11 @@
   }
   &__main-section {
     position: relative;
-    height: 70vh;
+    height: 60vh;
     z-index: -1;
 
     @include responsive(phone) {
-      height: 50vh;
+      height: 40vh;
     }
 
     background-image: linear-gradient(
