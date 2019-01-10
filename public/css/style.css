@@ -63,6 +63,9 @@ hr {
 .w100 {
   width: 100%; }
 
+.--red {
+  background-color: #e73c41; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -245,6 +248,14 @@ body {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text; }
+  .heading-secondary--white-large {
+    color: #fff;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Lato, sans-serif; }
+  .heading-secondary--white {
+    color: #eee; }
   .heading-secondary__sub {
     color: #fff;
     font-size: 3rem;
@@ -260,8 +271,6 @@ body {
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 3rem; } }
-  .heading-secondary--white {
-    color: #eee; }
   .heading-secondary:hover {
     background-image: linear-gradient(to right, #ef8083, #e5242b); }
 
@@ -287,6 +296,16 @@ body {
 
 .paragraph-info {
   font-size: 1.6rem;
+  font-weight: 500;
+  font-family: Lato, sans-serif; }
+
+.paragraph-info-medium {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: Lato, sans-serif; }
+
+.paragraph-info-large {
+  font-size: 2.4rem;
   font-weight: 500;
   font-family: Lato, sans-serif; }
 
@@ -718,7 +737,7 @@ u-weight-bold {
   animation-duration: 2s; }
 
 .info-box {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.95);
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
@@ -1057,8 +1076,12 @@ u-weight-bold {
     background-image: linear-gradient(to right bottom, rgba(91, 91, 91, 0.8), rgba(51, 51, 51, 0.8)), url("../img/carousel-1.jpg");
     background-size: 100% 100%; }
 
+.section-about {
+  padding: 15rem 5rem 15rem 5rem; }
+
 .section-info {
-  padding: 10rem 5rem 15rem 5rem; }
+  padding: 10rem 5rem 15rem 5rem;
+  background-image: linear-gradient(to right bottom, rgba(214, 26, 32, 0.9), rgba(231, 60, 65, 0.9)); }
 
 .section-range-deals {
   padding: 5rem 5rem 10rem 5rem;
@@ -1173,7 +1196,6 @@ u-weight-bold {
   padding: 5rem 25rem;
   background-image: linear-gradient(to right bottom, rgba(91, 91, 91, 0.8), rgba(51, 51, 51, 0.8)), url("../img/hero-1.jpg");
   background-size: auto;
-  z-index: -2;
   position: relative; }
   @media (max-width: 37.5em) {
     .section-contact {
@@ -1181,18 +1203,24 @@ u-weight-bold {
 
 .contact-box {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   border-radius: 3px;
   box-shadow: 0 2.5rem 4.5rem rgba(0, 0, 0, 0.15);
   border: 5px ridge #e1e1e1;
   background-image: linear-gradient(to right bottom, rgba(231, 60, 65, 0.8), rgba(169, 20, 25, 0.8)), url("../img/hero-1.jpg");
   background-size: auto; }
   .contact-box__content {
-    padding: 5rem; }
+    padding: 5rem;
+    position: relative; }
+    .contact-box__content--social-row {
+      position: relative;
+      z-index: 10; }
   .contact-box__iframe {
     height: 40rem;
     width: 60rem;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative;
+    z-index: 9999999; }
     @media (max-width: 75em) {
       .contact-box__iframe {
         height: 25rem;

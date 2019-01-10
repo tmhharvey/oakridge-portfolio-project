@@ -44,6 +44,18 @@ body {
   font-weight: 700;
   font-family: $default-font-family;
 
+  &--white-large {
+    color: $color-white;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: $default-font-family;
+  }
+
+  &--white {
+    color: $color-off-white;
+  }
+
   &__sub {
     color: $color-white;
 
@@ -75,9 +87,6 @@ body {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  &--white {
-    color: $color-off-white;
-  }
   &:hover {
     background-image: linear-gradient(
       to right,
@@ -112,6 +121,16 @@ body {
 }
 .paragraph-info {
   font-size: 1.6rem;
+  font-weight: 500;
+  font-family: $default-font-family;
+}
+.paragraph-info-medium {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: $default-font-family;
+}
+.paragraph-info-large {
+  font-size: 2.4rem;
   font-weight: 500;
   font-family: $default-font-family;
 }
