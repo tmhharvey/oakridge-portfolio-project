@@ -11,6 +11,10 @@ body {
   font-family: $default-font-family;
   transition: all 0.5s;
 
+  &--red {
+    color: $color-primary;
+  }
+
   &__main {
     color: $color-yellow-1;
     text-transform: uppercase;
@@ -56,6 +60,22 @@ body {
     color: $color-off-white;
   }
 
+  &--black {
+    color: black;
+  }
+
+  &--info-orange {
+    color: $color-info-orange;
+  }
+
+  &--dark-red {
+    color: $color-primary-dark;
+  }
+
+  &--red {
+    color: $color-primary;
+  }
+
   &__sub {
     color: $color-white;
 
@@ -66,12 +86,31 @@ body {
     }
 
     &--red {
-      color: $color-primary-light;
+      color: $color-primary;
+    }
+
+    &--dark-red {
+      color: $color-primary-dark;
     }
 
     @include responsive(phone) {
       letter-spacing: 1rem;
       font-size: 5rem;
+    }
+  }
+
+  &__large {
+    color: $color-white;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+
+    &--red {
+      color: $color-primary;
+    }
+
+    @include responsive(phone) {
+      letter-spacing: 1rem;
+      font-size: 2.5rem;
     }
   }
 

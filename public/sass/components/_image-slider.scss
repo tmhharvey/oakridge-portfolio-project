@@ -1,21 +1,18 @@
 .image-slider {
   &__box {
     @include absCenter;
-    width: 60vw;
-    height: 50vh;
+    width: 70%;
+    height: 85%;
 
     border: 5px ridge $color-tertiary-light;
     box-shadow: 0 1.5rem 2.5rem rgba($color-black, 0.4);
     overflow: hidden;
 
     @include responsive(tab-land) {
-      width: 70vw;
-      height: 45vh;
     }
 
     @include responsive(phone) {
-      width: 95vw;
-      height: 35vh;
+      width: 97%;
     }
 
     @include responsive(small-phone) {

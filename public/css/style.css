@@ -217,6 +217,8 @@ body {
   text-transform: uppercase;
   font-family: Lato, sans-serif;
   transition: all 0.5s; }
+  .heading-primary--red {
+    color: #d61a20; }
   .heading-primary__main {
     color: #ffbf00;
     text-transform: uppercase;
@@ -256,6 +258,14 @@ body {
     font-family: Lato, sans-serif; }
   .heading-secondary--white {
     color: #eee; }
+  .heading-secondary--black {
+    color: black; }
+  .heading-secondary--info-orange {
+    color: #dea857; }
+  .heading-secondary--dark-red {
+    color: #a91419; }
+  .heading-secondary--red {
+    color: #d61a20; }
   .heading-secondary__sub {
     color: #fff;
     font-size: 3rem;
@@ -263,11 +273,23 @@ body {
     .heading-secondary__sub--yellow {
       color: #ffbf00; }
     .heading-secondary__sub--red {
-      color: #e73c41; }
+      color: #d61a20; }
+    .heading-secondary__sub--dark-red {
+      color: #a91419; }
     @media (max-width: 37.5em) {
       .heading-secondary__sub {
         letter-spacing: 1rem;
         font-size: 5rem; } }
+  .heading-secondary__large {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 1rem; }
+    .heading-secondary__large--red {
+      color: #d61a20; }
+    @media (max-width: 37.5em) {
+      .heading-secondary__large {
+        letter-spacing: 1rem;
+        font-size: 2.5rem; } }
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 3rem; } }
@@ -706,19 +728,14 @@ u-weight-bold {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 3px;
-  width: 60vw;
-  height: 50vh;
+  width: 70%;
+  height: 85%;
   border: 5px ridge #e1e1e1;
   box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.4);
   overflow: hidden; }
-  @media (max-width: 75em) {
-    .image-slider__box {
-      width: 70vw;
-      height: 45vh; } }
   @media (max-width: 37.5em) {
     .image-slider__box {
-      width: 95vw;
-      height: 35vh; } }
+      width: 97%; } }
 
 .image-slider__box img {
   width: 100%;
@@ -1081,7 +1098,7 @@ u-weight-bold {
     background-size: 100% 100%; }
 
 .section-about {
-  padding: 7rem 5rem 15rem 5rem; }
+  padding: 5rem 5rem 15rem 5rem; }
 
 .section-info {
   padding: 10rem 5rem 15rem 5rem;
@@ -1211,7 +1228,7 @@ u-weight-bold {
   border-radius: 3px;
   box-shadow: 0 2.5rem 4.5rem rgba(0, 0, 0, 0.15);
   border: 5px ridge #e1e1e1;
-  background-image: linear-gradient(to right bottom, rgba(231, 60, 65, 0.8), rgba(169, 20, 25, 0.8)), url("../img/hero-1.jpg");
+  background-image: linear-gradient(to right bottom, rgba(225, 225, 225, 0.97), rgba(180, 180, 180, 0.97)), url("../img/hero-1.jpg");
   background-size: auto; }
   .contact-box__content {
     padding: 5rem;
