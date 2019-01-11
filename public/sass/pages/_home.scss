@@ -4,10 +4,12 @@
 .section-info {
   padding: 10rem 5rem 15rem 5rem;
   background-image: linear-gradient(
-    to right bottom,
-    rgba($color-primary, 0.9),
-    rgba($color-primary-light, 0.9)
-  );
+      to right bottom,
+      rgba($color-primary, 0.8),
+      rgba($color-primary-light, 0.8)
+    ),
+    url("../img/hero-1.jpg");
+  background-size: cover;
 }
 
 .section-range-deals {
@@ -24,6 +26,19 @@
     padding: 1rem;
     border-radius: $default-border-radius;
     background-color: $color-tertiary-light;
+  }
+}
+
+.section-virtual-tour {
+  padding: 3.5rem;
+
+  &__map-container {
+    iframe {
+      width: 60vw;
+      height: 40vh;
+      border-radius: $default-border-radius;
+      border: 5px ridge $color-tertiary-light;
+    }
   }
 }
 
