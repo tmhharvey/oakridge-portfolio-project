@@ -2,7 +2,7 @@ body {
   font-family: Lato, sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: $color-grey-dark;
+  color: $color-grey-dark-3;
 }
 
 .heading-primary {
@@ -65,7 +65,8 @@ body {
   }
 
   &--info-orange {
-    color: $color-info-orange;
+    color: darken($color-info-orange, 10%);
+    font-size: 2.5rem;
   }
 
   &--dark-red {

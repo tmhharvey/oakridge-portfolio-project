@@ -210,7 +210,7 @@ body {
   font-family: Lato, sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777; }
+  color: #333; }
 
 .heading-primary {
   color: #fff;
@@ -261,7 +261,8 @@ body {
   .heading-secondary--black {
     color: black; }
   .heading-secondary--info-orange {
-    color: #dea857; }
+    color: #d6922c;
+    font-size: 2.5rem; }
   .heading-secondary--dark-red {
     color: #a91419; }
   .heading-secondary--red {
@@ -780,7 +781,7 @@ u-weight-bold {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6); }
   .info-box__text {
     text-align: left;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding-left: 1rem; }
     @media (max-width: 75em) {
       .info-box__text {
@@ -920,7 +921,7 @@ u-weight-bold {
     color: #fff; }
   .card__backside-description {
     font-weight: 400;
-    font-size: 1.6rem; }
+    font-size: 1.8rem; }
   @media (max-width: 56.25em) {
     .card {
       height: auto;
