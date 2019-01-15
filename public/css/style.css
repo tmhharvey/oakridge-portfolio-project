@@ -1059,7 +1059,7 @@ u-weight-bold {
   .header__info-box-item {
     font-size: 1.6rem; }
     .header__info-box-item--left {
-      padding: 1rem 0; }
+      padding: 0.2rem 0; }
     .header__info-box-item--right span {
       display: block; }
     .header__info-box-item--right span i {
