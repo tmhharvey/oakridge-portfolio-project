@@ -267,6 +267,10 @@ body {
     color: #a91419; }
   .heading-secondary--red {
     color: #d61a20; }
+  .heading-secondary--bold {
+    font-weight: 700; }
+  .heading-secondary--bolder {
+    font-weight: 900; }
   .heading-secondary__sub {
     color: #fff;
     font-size: 3rem;
@@ -302,6 +306,10 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   font-family: Lato, sans-serif; }
+  .heading-tertiary--bold {
+    font-weight: 700; }
+  .heading-tertiary--bolder {
+    font-weight: 900; }
   .heading-tertiary__sub {
     color: #fff;
     font-size: 2.5rem;
