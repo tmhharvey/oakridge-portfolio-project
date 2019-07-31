@@ -1,6 +1,7 @@
 var express = require("express");
 var path = require("path");
 var ejs = require("ejs");
+var secure = require('ssl-express-www');
 
 var indexRouter = require("./routes/index");
 
@@ -18,7 +19,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/", indexRouter);
 
 var port = process.env.PORT || 3000;
-app.listen(port, function() {
-  console.log("server listening on port:" + port);
-});
+app.use(secure);
+ 
+var port = process.env.PORT || 3000;
+app.listen(port, () => console.log('Server listening on port ' + port));
+
 module.exports = app;

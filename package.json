@@ -19,7 +19,8 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "ssl-express-www": "^3.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.2",
