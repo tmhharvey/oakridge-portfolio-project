@@ -132,3 +132,13 @@
     }
   }
 }
+
+.dropdown-store-item {
+  font-size: 1.4rem;
+  padding: 1rem;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}

@@ -54,14 +54,35 @@
       <li class="nav-item navbar__nav-items">
         <a href="/contact" class="navbar__nav-link">Contact</a>
       </li>
-      <li class="nav-item navbar__nav-items">
-        <a
-          href="https://www.gunbroker.com/All/search?IncludeSellers=760893&PageSize=24&Sort=13&View=1&PageIndex=1"
-          class="navbar__nav-link"
-          target="_blank"
-          >Store</a
-        >
-      </li>
+      <div class="dropdown show">
+        <li class="nav-item navbar__nav-items">
+          <a
+            class="navbar__nav-link dropdown-toggle"
+            target="_blank"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Store
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a
+              class="dropdown-item dropdown-store-item"
+              href="https://shop.oakridgegunrange.com"
+              target="_blank"
+              >STORE</a
+            >
+            <a
+              class="dropdown-item dropdown-store-item"
+              href="https://www.gunbroker.com/All/search?IncludeSellers=760893&PageSize=24&Sort=13&View=1&PageIndex=1"
+              target="_blank"
+              >GUN BROKER</a
+            >
+          </div>
+        </li>
+      </div>
     </ul>
   </div>
   <div class="navbar__logo-box">

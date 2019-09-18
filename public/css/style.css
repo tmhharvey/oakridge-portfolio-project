@@ -578,6 +578,13 @@ u-weight-bold {
       .navbar__nav-items {
         margin-right: 2rem; } }
 
+.dropdown-store-item {
+  font-size: 1.4rem;
+  padding: 1rem; }
+  .dropdown-store-item:hover {
+    background-color: #d61a20;
+    color: #fff; }
+
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
 
